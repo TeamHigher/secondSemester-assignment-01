@@ -23,9 +23,9 @@ function sumOfNumbersTo(destination) {
 }
 let destination = 10;
 let result = sumOfNumbersTo(10);
-console.log(`The sum of the numbers between 1 and ${destination} is: ${result}`)
+console.log(result)
 
-
+ assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -84,7 +84,7 @@ arrayOfNumbers = [];
 result = celsiusToFahrenheit(arrayOfNumbers)
 console.log(result)
 
-
+ assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
