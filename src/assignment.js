@@ -16,11 +16,16 @@ const assignment = {};
  */
 function sumOfNumbersTo(destination) {
     let sum = 0;
+    for( let i = 1; i <= destination; i++){
+        sum += i;
+    }
     return sum
 }
+destination = 10;
+let result = sumOfNumbersTo(10);
+console.log(`The sum of the numbers between 1 and ${destination} is: ${result}`)
 
 
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -69,10 +74,17 @@ function countEvenNumbersWithin(destination) {
 function celsiusToFahrenheit(arrayOfNumbers) {
     let result = [];
 
+    result = arrayOfNumbers.map((celsiusToFahrenheit) => {
+        return Math.trunc(celsiusToFahrenheit * 9/5 + 32);
+    })
+
     return result;
 }
+arrayOfNumbers = [];
+result = celsiusToFahrenheit(arrayOfNumbers)
+console.log(result)
 
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+
 
 // ========================
 // DO NOT EDIT THIS BLOCK
