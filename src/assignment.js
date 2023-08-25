@@ -19,9 +19,9 @@ function sumOfNumbersTo(destination) {
     for( let i = 1; i <= destination; i++){
         sum += i;
     }
-    return sum
+    return sum;
 }
-destination = 10;
+let destination = 10;
 let result = sumOfNumbersTo(10);
 console.log(`The sum of the numbers between 1 and ${destination} is: ${result}`)
 
